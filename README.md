@@ -2,6 +2,10 @@
 
 This is my first Power BI Visual that I made as a demo for a friend.
 
+I used react for the majority of the build. I had to work at figuring out how to make functional components work as the [tutorial](https://docs.microsoft.com/en-us/power-bi/developer/visuals/create-react-visual) only shows you how to integrate react using class based components.
+
+The entry point to this code is `src/visual.ts`. But the bulk of the Component is in the `src/App.tsx` file.
+
 It's primary purpose was to be a table with clickable rows that would expand into a details view.
 
 To setup up you drag the columns that you want in the table into the `Summary` section and the columns that you want in the details view into the `Details` section.
