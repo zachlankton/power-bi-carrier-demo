@@ -20,7 +20,6 @@ export class Visual implements IVisual {
     private reactRoot: React.FunctionComponentElement<any>;
 
     constructor(options: VisualConstructorOptions) {
-        console.log("asdfasdf", options);
         this.target = options.element;
         this.clear();
     }
@@ -28,7 +27,6 @@ export class Visual implements IVisual {
     public enumerateObjectInstances(
         options: EnumerateVisualObjectInstancesOptions
     ): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
-        console.log("asdfasdf", options);
         return VisualSettings.enumerateObjectInstances(
             this.settings || VisualSettings.getDefault(),
             options

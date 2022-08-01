@@ -17,7 +17,6 @@ function sortByIndex(a: any, b: any, indexName: string) {
 
 export default function App(props: any) {
     if (props === undefined) return <></>;
-    console.log(props);
 
     const options = props.options as VisualUpdateOptions;
     let summaryCols = [];
