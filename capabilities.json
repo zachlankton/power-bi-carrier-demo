@@ -1,0 +1,73 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Summary",
+            "name": "summary",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Details",
+            "name": "details",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "circle": {
+            "displayName": "Circle",
+            "properties": {
+                "circleFillRule": {
+                    "displayName": "Color saturation",
+                    "displayNameKey": "Visual_ColorSaturation",
+                    "type": {
+                        "fillRule": {}
+                    },
+                    "rule": {
+                        "inputRole": "Gradient",
+                        "output": {
+                            "property": "fill",
+                            "selector": ["Category"]
+                        }
+                    }
+                },
+                "circleColor": {
+                    "displayName": "Color",
+                    "description": "The fill color of the circle.",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "circleThickness": {
+                    "displayName": "Thickness",
+                    "description": "The circle thickness.",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "summary"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "details"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
