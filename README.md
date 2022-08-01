@@ -8,7 +8,7 @@ The entry point to this code is `src/visual.ts`. But most of the Component is in
 
 Its primary purpose was to be a table with clickable rows that would expand into a details view.
 
-To set up, drag the columns that you want in the table into the `Summary` section and the columns that you wish to in the details view into the `Details` section.
+To set up, drag the columns you want in the table into the `Summary` section and the columns you wish to have in the details view into the `Details` section.
 
 ![image](https://user-images.githubusercontent.com/2927894/182136352-a427b1ef-236e-4872-9cfe-90da5d809098.png)
 
